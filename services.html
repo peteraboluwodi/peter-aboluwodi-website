@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services - Peter Aboluwodi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  try {
+    var pref = localStorage.getItem('theme') || 'system';
+    var resolved = pref === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref;
+    document.documentElement.dataset.theme = resolved;
+  } catch (e) {}
+})();
+</script>
+<script src="nav.js" defer></script>
+<script src="theme.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-brand-name">PETER ABOLUWODI</span>
+    <span class="nav-brand-tagline">Creator Growth Specialist</span>
+  </a>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button type="button" class="theme-btn" data-theme-choice="light" aria-label="Light theme" title="Light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="dark" aria-label="Dark theme" title="Dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="system" aria-label="Match system theme" title="System">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+      </button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-item nav-item--dropdown">
+        <a href="services.html" class="nav-link nav-link--active">Services</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-dropdown-services" aria-label="Toggle services menu">
+          <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" id="nav-dropdown-services">
+          <div class="nav-dropdown-inner">
+            <a href="services.html#seo-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">01</span>YouTube SEO &amp; Promotion</a>
+            <a href="services.html#channel-management" class="nav-dropdown-item"><span class="nav-dropdown-num">02</span>Channel Management &amp; Audit</a>
+            <a href="services.html#video-editing" class="nav-dropdown-item"><span class="nav-dropdown-num">03</span>YouTube Video Editing</a>
+            <a href="services.html#twitch-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">04</span>Twitch Promotion &amp; Branding</a>
+            <a href="services.html#monetization" class="nav-dropdown-item"><span class="nav-dropdown-num">05</span>YouTube Monetization</a>
+          </div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Book a Free Audit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-intro">
+    <h1>Everything your channel needs, in one place.</h1>
+    <p>Five services, all built around one goal: a channel that grows and actually earns.</p>
+  </div>
+
+  <div class="service-rows">
+    <div class="services-glow" aria-hidden="true"></div>
+
+    <div class="service-row" id="seo-promotion">
+      <div>
+        <div class="service-row-num">01</div>
+        <h2>YouTube SEO &amp; Promotion</h2>
+        <p>Getting found is half the battle. I optimize titles, descriptions, tags, and thumbnails, then promote videos to the right audience so the algorithm has a reason to push them further.</p>
+      </div>
+      <ul class="service-list">
+        <li>Keyword &amp; competitor research</li>
+        <li>Title, description &amp; tag optimization</li>
+        <li>Thumbnail &amp; CTR testing</li>
+        <li>Cross-platform promotion plan</li>
+      </ul>
+      <button class="service-row-toggle" type="button" aria-expanded="false" aria-controls="workflow-seo-promotion">
+        <span class="service-row-toggle-label">See the full workflow</span>
+        <svg class="service-row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="service-workflow-wrap" id="workflow-seo-promotion">
+        <div class="service-workflow-inner">
+          <div class="service-workflow-steps">
+            <div class="workflow-step">
+              <div class="workflow-step-num">1</div>
+              <div class="workflow-step-body">
+                <h3>Research &amp; audit</h3>
+                <p>I start with keyword and competitor research, then review your current titles, tags, and thumbnails to find exactly where clicks and impressions are being lost.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">2</div>
+              <div class="workflow-step-body">
+                <h3>Optimize &amp; test</h3>
+                <p>Titles, descriptions, and tags get rebuilt around real search data, and thumbnail concepts are tested against each other for the strongest click-through rate.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">3</div>
+              <div class="workflow-step-body">
+                <h3>Promote &amp; deliver</h3>
+                <p>The video gets pushed to the right audience through a cross-platform promotion plan, and you're handed a repeatable process for every future upload.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-row" id="channel-management">
+      <div>
+        <div class="service-row-num">02</div>
+        <h2>Channel Management &amp; Audit</h2>
+        <p>A full diagnostic of your channel's analytics, content, and positioning, followed by ongoing management so nothing slips: uploads, community, and strategy stay on track.</p>
+      </div>
+      <ul class="service-list">
+        <li>Full analytics &amp; content audit</li>
+        <li>Upload &amp; publishing schedule management</li>
+        <li>Community &amp; comment management</li>
+        <li>Monthly performance reporting</li>
+      </ul>
+      <button class="service-row-toggle" type="button" aria-expanded="false" aria-controls="workflow-channel-management">
+        <span class="service-row-toggle-label">See the full workflow</span>
+        <svg class="service-row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="service-workflow-wrap" id="workflow-channel-management">
+        <div class="service-workflow-inner">
+          <div class="service-workflow-steps">
+            <div class="workflow-step">
+              <div class="workflow-step-num">1</div>
+              <div class="workflow-step-body">
+                <h3>Full audit</h3>
+                <p>A complete review of your analytics, content library, and positioning to see exactly what's working and what's holding growth back.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">2</div>
+              <div class="workflow-step-body">
+                <h3>Set the system</h3>
+                <p>An upload schedule, community management routine, and reporting cadence get put in place so nothing slips through the cracks.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">3</div>
+              <div class="workflow-step-body">
+                <h3>Manage &amp; report</h3>
+                <p>Ongoing hands-on management keeps everything on track, with a monthly performance report so you always know where things stand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-row" id="video-editing">
+      <div>
+        <div class="service-row-num">03</div>
+        <h2>YouTube Video Editing</h2>
+        <p>Raw footage into videos that hold attention, pacing, cuts, captions, and sound design tuned to keep watch time up and drop-off down.</p>
+      </div>
+      <ul class="service-list">
+        <li>Full edit: pacing, cuts &amp; transitions</li>
+        <li>Captions &amp; motion graphics</li>
+        <li>Sound design &amp; color correction</li>
+        <li>Retention-focused pacing</li>
+      </ul>
+      <button class="service-row-toggle" type="button" aria-expanded="false" aria-controls="workflow-video-editing">
+        <span class="service-row-toggle-label">See the full workflow</span>
+        <svg class="service-row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="service-workflow-wrap" id="workflow-video-editing">
+        <div class="service-workflow-inner">
+          <div class="service-workflow-steps">
+            <div class="workflow-step">
+              <div class="workflow-step-num">1</div>
+              <div class="workflow-step-body">
+                <h3>Review the footage</h3>
+                <p>Raw footage gets reviewed for the story and strongest moments before a single cut is made.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">2</div>
+              <div class="workflow-step-body">
+                <h3>Edit &amp; polish</h3>
+                <p>Full edit pass: pacing, cuts, transitions, captions, motion graphics, sound design, and color correction, all tuned to keep watch time up.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">3</div>
+              <div class="workflow-step-body">
+                <h3>Deliver &amp; refine</h3>
+                <p>You get the final export plus a revision round to lock in pacing and flow before it goes live.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-row" id="twitch-promotion">
+      <div>
+        <div class="service-row-num">04</div>
+        <h2>Twitch Promotion &amp; Branding</h2>
+        <p>Stream branding, overlays, panels, and identity, paired with promotion that turns one-time viewers into a returning audience.</p>
+      </div>
+      <ul class="service-list">
+        <li>Stream branding: overlays &amp; panels</li>
+        <li>Cross-platform promotion</li>
+        <li>Audience growth strategy</li>
+        <li>Community-building support</li>
+      </ul>
+      <button class="service-row-toggle" type="button" aria-expanded="false" aria-controls="workflow-twitch-promotion">
+        <span class="service-row-toggle-label">See the full workflow</span>
+        <svg class="service-row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="service-workflow-wrap" id="workflow-twitch-promotion">
+        <div class="service-workflow-inner">
+          <div class="service-workflow-steps">
+            <div class="workflow-step">
+              <div class="workflow-step-num">1</div>
+              <div class="workflow-step-body">
+                <h3>Brand the stream</h3>
+                <p>Overlays, panels, and stream identity get built from scratch or refreshed to match where your channel is headed.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">2</div>
+              <div class="workflow-step-body">
+                <h3>Promote across platforms</h3>
+                <p>A cross-platform promotion plan goes live to bring new viewers to your streams.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">3</div>
+              <div class="workflow-step-body">
+                <h3>Build the community</h3>
+                <p>An audience growth strategy and community-building support turn one-time viewers into regulars who show up every stream.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-row" id="monetization">
+      <div>
+        <div class="service-row-num">05</div>
+        <h2>YouTube Monetization</h2>
+        <p>Getting channels eligible for the Partner Program and beyond, ads, memberships, and sponsorship-readiness, so growth turns into revenue.</p>
+      </div>
+      <ul class="service-list">
+        <li>YPP eligibility &amp; application support</li>
+        <li>Ad revenue optimization</li>
+        <li>Memberships &amp; channel funding setup</li>
+        <li>Sponsorship-readiness &amp; media kit</li>
+      </ul>
+      <button class="service-row-toggle" type="button" aria-expanded="false" aria-controls="workflow-monetization">
+        <span class="service-row-toggle-label">See the full workflow</span>
+        <svg class="service-row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="service-workflow-wrap" id="workflow-monetization">
+        <div class="service-workflow-inner">
+          <div class="service-workflow-steps">
+            <div class="workflow-step">
+              <div class="workflow-step-num">1</div>
+              <div class="workflow-step-body">
+                <h3>Check eligibility</h3>
+                <p>Your channel gets reviewed against Partner Program requirements, with a clear plan to close any gaps.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">2</div>
+              <div class="workflow-step-body">
+                <h3>Apply &amp; optimize</h3>
+                <p>I support the YPP application and optimize ad revenue settings once you're approved.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-num">3</div>
+              <div class="workflow-step-body">
+                <h3>Expand revenue</h3>
+                <p>Memberships, sponsorship-readiness, and a media kit get put in place so growth turns into multiple revenue streams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="section section--bordered">
+    <h2 class="steps-title">How a project runs</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <div class="step-label">Discovery</div>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <div class="step-label">Audit</div>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <div class="step-label">Strategy</div>
+      </div>
+      <div class="step">
+        <div class="step-circle">4</div>
+        <div class="step-label">Execution</div>
+      </div>
+      <div class="step">
+        <div class="step-circle">5</div>
+        <div class="step-label">Reporting</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Not sure what you need?</h2>
+    <p>Start with a free audit and I'll recommend a plan.</p>
+    <a href="contact.html" class="btn btn--primary">Book a Free Audit</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-about">
+    <div class="footer-brand">PETER ABOLUWODI</div>
+    <p>YouTube and Twitch growth, channel branding, management, editing, and monetization for creators who mean business.</p>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Explore</div>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Let's Connect</div>
+    <a href="mailto:Peteraboluwodi@gmail.com">Peteraboluwodi@gmail.com</a>
+    <div class="footer-text">Discord: georage100</div>
+    <a class="footer-social" href="https://www.fiverr.com/adesuloyepeter" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Fiverr</span>
+    </a>
+    <a class="footer-social" href="https://kwork.com/user/georage100" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Kwork</span>
+    </a>
+    <a class="footer-social" href="https://www.linkedin.com/in/peter-aboluwodi-520896387" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="7.2" cy="7.2" r="1.6" fill="currentColor"></circle><rect x="6.1" y="10.2" width="2.2" height="7.6" fill="currentColor"></rect><path d="M11.3 10.2h2.1v1.3c.5-.9 1.5-1.5 2.9-1.5 2.2 0 3.4 1.5 3.4 4.1v3.7h-2.2v-3.4c0-1.4-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.5-.1.8v3.7h-2.2z" fill="currentColor"></path></svg>
+      <span>LinkedIn</span>
+    </a>
+    <a class="footer-social" href="https://wa.me/2347088361880" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 8.3c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.4.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.8 1.6.2.1.4.1.5-.1.2-.1.6-.7.8-.9.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.9-.2 1.7-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.3-1.4-5.5-4.8-5.6-5-.2-.2-1.3-1.8-1.3-3.4 0-1.6.9-2.4 1.2-2.7Z" fill="currentColor"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var rows = document.querySelectorAll('.service-row');
+    if (!rows.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function setOpen(row, toggle, label, isOpen) {
+      row.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      label.textContent = isOpen ? 'Hide the workflow' : 'See the full workflow';
+    }
+
+    rows.forEach(function (row, i) {
+      row.style.transitionDelay = reduce ? '0s' : (i * 90) + 'ms';
+
+      var toggle = row.querySelector('.service-row-toggle');
+      var label = toggle.querySelector('.service-row-toggle-label');
+
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(row, toggle, label, !row.classList.contains('is-open'));
+      });
+
+      row.addEventListener('click', function (e) {
+        if (e.target.closest('.service-row-toggle')) return;
+        if (window.getSelection().toString()) return;
+        setOpen(row, toggle, label, !row.classList.contains('is-open'));
+      });
+    });
+
+    if (window.location.hash) {
+      var target = document.querySelector(window.location.hash);
+      if (target && target.classList.contains('service-row')) {
+        target.classList.add('is-visible');
+        var t = target.querySelector('.service-row-toggle');
+        var l = t.querySelector('.service-row-toggle-label');
+        setOpen(target, t, l, true);
+      }
+    }
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      rows.forEach(function (row) { row.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    rows.forEach(function (row) { observer.observe(row); });
+  })();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a80bb891d62051d4f67ff7a/1k03dp4vj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

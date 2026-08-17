@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peter Aboluwodi - YouTube &amp; Twitch Growth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  try {
+    var pref = localStorage.getItem('theme') || 'system';
+    var resolved = pref === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref;
+    document.documentElement.dataset.theme = resolved;
+  } catch (e) {}
+})();
+</script>
+<script src="nav.js" defer></script>
+<script src="theme.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-brand-name">PETER ABOLUWODI</span>
+    <span class="nav-brand-tagline">Creator Growth Specialist</span>
+  </a>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button type="button" class="theme-btn" data-theme-choice="light" aria-label="Light theme" title="Light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="dark" aria-label="Dark theme" title="Dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="system" aria-label="Match system theme" title="System">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+      </button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link nav-link--active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-item nav-item--dropdown">
+        <a href="services.html" class="nav-link">Services</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-dropdown-services" aria-label="Toggle services menu">
+          <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" id="nav-dropdown-services">
+          <div class="nav-dropdown-inner">
+            <a href="services.html#seo-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">01</span>YouTube SEO &amp; Promotion</a>
+            <a href="services.html#channel-management" class="nav-dropdown-item"><span class="nav-dropdown-num">02</span>Channel Management &amp; Audit</a>
+            <a href="services.html#video-editing" class="nav-dropdown-item"><span class="nav-dropdown-num">03</span>YouTube Video Editing</a>
+            <a href="services.html#twitch-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">04</span>Twitch Promotion &amp; Branding</a>
+            <a href="services.html#monetization" class="nav-dropdown-item"><span class="nav-dropdown-num">05</span>YouTube Monetization</a>
+          </div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Book a Free Audit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="videos/hero-poster.jpg" aria-hidden="true">
+    <source src="videos/hero-loop.mp4" type="video/mp4" media="(min-width: 641px)">
+  </video>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="platform-row">
+      <span class="platform-tag"><span class="platform-dot platform-dot--yt"></span>YouTube</span>
+      <span class="platform-tag"><span class="platform-dot platform-dot--tw"></span>Twitch</span>
+    </div>
+    <h1>Turn Views Into Revenue.</h1>
+    <p class="hero-subhead">Stop guessing. Start growing.</p>
+    <p class="hero-lead">Full-service YouTube &amp; Twitch growth for serious creators.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn--primary">Book a Free Audit</a>
+      <a href="portfolio.html" class="btn btn--outline">View My Work</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section class="trust-bar">
+    <div class="trust-stat">
+      <div class="trust-stat-number">5+</div>
+      <div class="trust-stat-label">Years of Experience</div>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-number">5★</div>
+      <div class="trust-stat-label">Fiverr &amp; Upwork Rating</div>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-number">1hr</div>
+      <div class="trust-stat-label">Response Time</div>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <div class="section-head">
+      <h2 class="eyebrow-heading">Results clients see</h2>
+      <span class="section-note">Illustrative: real client data on request</span>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">+140%</div>
+        <div class="stat-desc">Average subscriber growth in 90 days</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">+65%</div>
+        <div class="stat-desc">Watch time increase after audit</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3.2x</div>
+        <div class="stat-desc">CTR lift from thumbnail &amp; title rework</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">18</div>
+        <div class="stat-desc">Channels monetized to date</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker-label">
+    <span class="ticker-label-line" aria-hidden="true"></span>
+    <span class="ticker-label-text">Services &amp; Work</span>
+    <span class="ticker-label-line" aria-hidden="true"></span>
+  </div>
+
+  <section class="ticker-band" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-half">
+        <span class="ticker-item">YouTube Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Twitch Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">TikTok Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Social Media Marketing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Channel Management</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Video Editing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Digital Marketing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">YouTube Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Twitch Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">TikTok Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Social Media Marketing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Channel Management</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Video Editing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Digital Marketing</span><span class="ticker-dot">&#9679;</span>
+      </div>
+      <div class="ticker-half">
+        <span class="ticker-item">YouTube Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Twitch Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">TikTok Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Social Media Marketing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Channel Management</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Video Editing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Digital Marketing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">YouTube Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Twitch Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">TikTok Growth</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Social Media Marketing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Channel Management</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Video Editing</span><span class="ticker-dot">&#9679;</span>
+        <span class="ticker-item">Digital Marketing</span><span class="ticker-dot">&#9679;</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <h2 class="section-title">What I do</h2>
+    <div class="services-grid">
+      <a class="service-card" href="portfolio.html">
+        <div class="service-card-inner">
+          <div class="service-card-face service-card-face--front">
+            <div class="service-icon"></div>
+            <h3>YouTube SEO &amp; Promotion</h3>
+            <p>Keyword strategy, metadata, and promotion that get the right people watching.</p>
+          </div>
+          <div class="service-card-face service-card-face--back">
+            <h3>View Portfolio <span class="cta-arrow">→</span></h3>
+            <p>See real SEO &amp; promotion results from client channels.</p>
+          </div>
+        </div>
+      </a>
+      <a class="service-card" href="portfolio.html">
+        <div class="service-card-inner">
+          <div class="service-card-face service-card-face--front">
+            <div class="service-icon"></div>
+            <h3>Channel Management &amp; Audit</h3>
+            <p>A full audit of what's working, what isn't, and hands-on management going forward.</p>
+          </div>
+          <div class="service-card-face service-card-face--back">
+            <h3>View Portfolio <span class="cta-arrow">→</span></h3>
+            <p>See channel audits and management work in action.</p>
+          </div>
+        </div>
+      </a>
+      <a class="service-card" href="portfolio.html">
+        <div class="service-card-inner">
+          <div class="service-card-face service-card-face--front">
+            <div class="service-icon"></div>
+            <h3>Video Editing</h3>
+            <p>Edits built to hold attention and keep watch time climbing.</p>
+          </div>
+          <div class="service-card-face service-card-face--back">
+            <h3>View Portfolio <span class="cta-arrow">→</span></h3>
+            <p>See edited videos and before/after examples.</p>
+          </div>
+        </div>
+      </a>
+      <a class="service-card" href="portfolio.html">
+        <div class="service-card-inner">
+          <div class="service-card-face service-card-face--front">
+            <div class="service-icon"></div>
+            <h3>Twitch Promotion &amp; Branding</h3>
+            <p>Stream branding and promotion that builds a real audience, not just viewers.</p>
+          </div>
+          <div class="service-card-face service-card-face--back">
+            <h3>View Portfolio <span class="cta-arrow">→</span></h3>
+            <p>See stream branding and growth work.</p>
+          </div>
+        </div>
+      </a>
+      <a class="service-card" href="portfolio.html">
+        <div class="service-card-inner">
+          <div class="service-card-face service-card-face--front">
+            <div class="service-icon"></div>
+            <h3>YouTube Monetization</h3>
+            <p>Getting channels eligible, approved, and earning, the right way.</p>
+          </div>
+          <div class="service-card-face service-card-face--back">
+            <h3>View Portfolio <span class="cta-arrow">→</span></h3>
+            <p>See monetization case studies and outcomes.</p>
+          </div>
+        </div>
+      </a>
+      <a href="services.html" class="services-cta">See all services →</a>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <h2 class="section-title">What clients say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Aboluwodi gets the job done!"</p>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="images/testimonial-moonwalkerj5.jpg" alt="MoonWalkerJ5">
+          <div>
+            <div class="testimonial-name"><a href="https://www.youtube.com/@MoonWalkerJ5" target="_blank" rel="noopener noreferrer">MoonWalkerJ5</a></div>
+            <div class="testimonial-channel">@MoonWalkerJ5</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"It's been a pleasure working with him, is very communicative and understanding, I hope to work with him again in the future."</p>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="images/testimonial-lfamilygamingdad.png" alt="L Family Gaming Dad">
+          <div>
+            <div class="testimonial-name"><a href="https://www.youtube.com/@lfamilygamingdad" target="_blank" rel="noopener noreferrer">L Family Gaming Dad</a></div>
+            <div class="testimonial-channel">@lfamilygamingdad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <div class="logos-label">Trusted by channels like</div>
+    <div class="logo-marquee">
+      <div class="logo-marquee-row">
+        <div class="logo-marquee-track logo-marquee-track--left">
+          <div class="logo-marquee-half">
+            <img class="logo-marquee-item" src="images/logos/logo-01.webp" alt="Meatrius" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-02.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-03.webp" alt="ruhxflashttv" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-04.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-05.webp" alt="WWE" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-06.webp" alt="TTV Lucid Dreams" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-07.webp" alt="RAZOR317" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-08.webp" alt="SassyGirl1715" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-09.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-10.webp" alt="MoonWalkerJ5" loading="lazy">
+          </div>
+          <div class="logo-marquee-half" aria-hidden="true">
+            <img class="logo-marquee-item" src="images/logos/logo-01.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-02.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-03.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-04.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-05.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-06.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-07.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-08.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-09.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-10.webp" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="logo-marquee-row">
+        <div class="logo-marquee-track logo-marquee-track--right">
+          <div class="logo-marquee-half">
+            <img class="logo-marquee-item" src="images/logos/logo-11.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-12.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-13.webp" alt="Horror with Claws" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-14.webp" alt="Beats &amp; Beyond" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-15.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-16.webp" alt="Smokea7Leaf" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-17.webp" alt="Evelyn Esmeray" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-18.webp" alt="L Family Gaming Dad" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-19.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-20.webp" alt="Client channel" loading="lazy">
+          </div>
+          <div class="logo-marquee-half" aria-hidden="true">
+            <img class="logo-marquee-item" src="images/logos/logo-11.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-12.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-13.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-14.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-15.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-16.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-17.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-18.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-19.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-20.webp" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to grow with a plan?</h2>
+    <p>Start with a free channel audit, no obligation.</p>
+    <a href="contact.html" class="btn btn--primary">Book a Free Audit</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-about">
+    <div class="footer-brand">PETER ABOLUWODI</div>
+    <p>YouTube and Twitch growth, channel branding, management, editing, and monetization for creators who mean business.</p>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Explore</div>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Let's Connect</div>
+    <a href="mailto:Peteraboluwodi@gmail.com">Peteraboluwodi@gmail.com</a>
+    <div class="footer-text">Discord: georage100</div>
+    <a class="footer-social" href="https://www.fiverr.com/adesuloyepeter" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Fiverr</span>
+    </a>
+    <a class="footer-social" href="https://kwork.com/user/georage100" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Kwork</span>
+    </a>
+    <a class="footer-social" href="https://www.linkedin.com/in/peter-aboluwodi-520896387" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="7.2" cy="7.2" r="1.6" fill="currentColor"></circle><rect x="6.1" y="10.2" width="2.2" height="7.6" fill="currentColor"></rect><path d="M11.3 10.2h2.1v1.3c.5-.9 1.5-1.5 2.9-1.5 2.2 0 3.4 1.5 3.4 4.1v3.7h-2.2v-3.4c0-1.4-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.5-.1.8v3.7h-2.2z" fill="currentColor"></path></svg>
+      <span>LinkedIn</span>
+    </a>
+    <a class="footer-social" href="https://wa.me/2347088361880" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 8.3c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.4.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.8 1.6.2.1.4.1.5-.1.2-.1.6-.7.8-.9.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.9-.2 1.7-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.3-1.4-5.5-4.8-5.6-5-.2-.2-1.3-1.8-1.3-3.4 0-1.6.9-2.4 1.2-2.7Z" fill="currentColor"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var video = document.querySelector('.hero-video');
+    if (!video) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.removeAttribute('autoplay');
+      video.pause();
+    }
+  })();
+</script>
+
+<script>
+  (function () {
+    var cards = document.querySelectorAll('.stat-card');
+    if (!cards.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    cards.forEach(function (card, i) {
+      card.style.transitionDelay = reduce ? '0s' : (i * 90) + 'ms';
+    });
+
+    function animateCount(el) {
+      var text = el.textContent.trim();
+      var match = text.match(/^([^0-9]*)([0-9]+(?:\.[0-9]+)?)([^0-9]*)$/);
+      if (!match) return;
+      var prefix = match[1];
+      var target = parseFloat(match[2]);
+      var suffix = match[3];
+      var decimals = match[2].indexOf('.') !== -1 ? match[2].split('.')[1].length : 0;
+      var duration = 1200;
+      var start = null;
+
+      function step(ts) {
+        if (start === null) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = prefix + target.toFixed(decimals) + suffix;
+      }
+      requestAnimationFrame(step);
+    }
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      cards.forEach(function (card) { card.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var card = entry.target;
+        card.classList.add('is-visible');
+        var numEl = card.querySelector('.stat-number');
+        if (numEl) animateCount(numEl);
+        observer.unobserve(card);
+      });
+    }, { threshold: 0.4 });
+
+    cards.forEach(function (card) { observer.observe(card); });
+  })();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a80bb891d62051d4f67ff7a/1k03dp4vj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About - Peter Aboluwodi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  try {
+    var pref = localStorage.getItem('theme') || 'system';
+    var resolved = pref === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref;
+    document.documentElement.dataset.theme = resolved;
+  } catch (e) {}
+})();
+</script>
+<script src="nav.js" defer></script>
+<script src="theme.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-brand-name">PETER ABOLUWODI</span>
+    <span class="nav-brand-tagline">Creator Growth Specialist</span>
+  </a>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button type="button" class="theme-btn" data-theme-choice="light" aria-label="Light theme" title="Light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="dark" aria-label="Dark theme" title="Dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="system" aria-label="Match system theme" title="System">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+      </button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link nav-link--active">About</a>
+      <div class="nav-item nav-item--dropdown">
+        <a href="services.html" class="nav-link">Services</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-dropdown-services" aria-label="Toggle services menu">
+          <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" id="nav-dropdown-services">
+          <div class="nav-dropdown-inner">
+            <a href="services.html#seo-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">01</span>YouTube SEO &amp; Promotion</a>
+            <a href="services.html#channel-management" class="nav-dropdown-item"><span class="nav-dropdown-num">02</span>Channel Management &amp; Audit</a>
+            <a href="services.html#video-editing" class="nav-dropdown-item"><span class="nav-dropdown-num">03</span>YouTube Video Editing</a>
+            <a href="services.html#twitch-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">04</span>Twitch Promotion &amp; Branding</a>
+            <a href="services.html#monetization" class="nav-dropdown-item"><span class="nav-dropdown-num">05</span>YouTube Monetization</a>
+          </div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Book a Free Audit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="about-hero">
+    <div class="photo-corners about-photo">
+      <img class="photo-contain" src="images/peter-aboluwodi.webp" alt="Peter Aboluwodi">
+    </div>
+    <div class="about-bio">
+      <span class="eyebrow">About</span>
+      <h1>Hey, I'm Peter, also known as George.</h1>
+      <p>I help YouTube and Twitch creators turn inconsistent growth into a real, sustainable channel strategy. Over the past 5+ years, that's grown into a full-service operation covering everything a creator needs to scale: SEO growth, channel management and audits, video editing, monetization strategy, and promotion across YouTube, Twitch, TikTok, and social media.</p>
+      <p>I don't believe in shortcuts that put your channel at risk. Every strategy I run is built on <strong>real audience growth, genuine engagement, and long-term visibility</strong>, not bots, fake subscribers, or gimmicks that get flagged and undo months of work.</p>
+      <p>Whether you're just starting out and need your channel set up the right way, or you're an established creator looking to scale views, subscribers, and revenue, I bring hands-on management and a data-driven eye to every part of your channel, so you can focus on creating while the growth runs in the background.</p>
+      <p>If you're ready to <strong>stop guessing and start growing with a real strategy</strong> behind you, let's talk.</p>
+      <p class="about-signature">Peter Aboluwodi (George)</p>
+    </div>
+  </section>
+
+  <section class="section section--bordered about-extras">
+    <span class="eyebrow-heading">Approach</span>
+    <h2 class="section-title" style="margin-top:10px;">Built to adapt</h2>
+    <div class="about-extras-grid">
+      <div class="about-extras-card">
+        <div class="about-extras-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        </div>
+        <h3>Tools</h3>
+        <p>I work with a full suite of professional video editing and channel growth tools, adapting to whatever each project and client's existing workflow requires.</p>
+      </div>
+      <div class="about-extras-card">
+        <div class="about-extras-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        </div>
+        <h3>Niches</h3>
+        <p>I've worked across a wide range of content niches, including gaming, lifestyle, education, tech, and more, bringing the same data-driven approach to growth regardless of the content type.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <h2 class="section-title">How I work</h2>
+    <div class="process-grid">
+      <div class="process-item">
+        <div class="process-num">01</div>
+        <h3>Audit first</h3>
+        <p>No guesswork. I start by seeing exactly what's holding a channel back.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">02</div>
+        <h3>Plan together</h3>
+        <p>A clear roadmap you understand and agree with before any work starts.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">03</div>
+        <h3>Execute &amp; iterate</h3>
+        <p>Regular check-ins and adjustments based on what the data shows.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">04</div>
+        <h3>Report honestly</h3>
+        <p>Straight talk on what's working and what needs to change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <h2 class="section-title">Why brands work with me</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Direct communication</h3>
+        <p>You'll always know where a project stands, no chasing for updates.</p>
+      </div>
+      <div class="info-card">
+        <h3>One person, full ownership</h3>
+        <p>No handoffs between departments. I run the strategy and the delivery.</p>
+      </div>
+      <div class="info-card">
+        <h3>Platform-native thinking</h3>
+        <p>Strategy built around how YouTube and Twitch actually reward creators.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bordered faq-section">
+    <div class="faq-glow" aria-hidden="true"></div>
+    <div class="faq-head">
+      <div class="faq-head-text">
+        <span class="eyebrow-heading">FAQ</span>
+        <h2 class="section-title" style="margin:10px 0 8px;">Frequently asked questions</h2>
+        <p class="faq-subtext">Straight answers before you reach out.</p>
+      </div>
+      <div class="faq-equalizer" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>What services do you offer?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>I offer full-service YouTube and Twitch growth support, including SEO and promotion, channel management and audits, video editing, monetization strategy, and Twitch branding and promotion.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>How long before I see results?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>Every channel is different, but most clients start seeing measurable movement within the first few weeks of a strategy being in place.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>How much do your services cost?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>Pricing depends on your specific goals, whether that's audience growth, revenue targets, or channel size, so costs are tailored per project rather than fixed. Book a free audit and I'll give you a clear, honest quote based on exactly what your channel needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Do you only work with big channels, or also beginners?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>Both. Whether you're just starting out or already established and looking to scale, I tailor the strategy to where your channel is right now.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Do you use bots or fake subscribers/views to grow channels?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>No. Every strategy is built on real audience growth, genuine engagement, and long-term visibility, not bots, fake subscribers, or gimmicks that can get your channel flagged.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>How often will we communicate during the project?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>Direct and regular. You'll always know where things stand, with a typical response time of 1 hour.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>What's included in the free audit?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>A full audit of what's currently holding your channel back, no guesswork, so we know exactly where to focus before any work begins.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Will I need to give you access to my channel/account?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>Depending on the service, yes, some tasks require channel access. Any access given is used strictly for your project and treated confidentially.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>What if I'm not happy with the results?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>I don't consider a project delivered until the results are actually right. Work isn't marked complete, and funds aren't released, until you're satisfied with what's been delivered.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>How do I get started?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer-wrap">
+          <div class="faq-answer-inner">
+            <p>Book a free audit through the <a href="contact.html">Contact page</a>, and we'll go from there, starting with a clear plan you understand and agree with before any work begins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Let's talk about your channel</h2>
+    <a href="contact.html" class="btn btn--primary">Book a Free Audit</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-about">
+    <div class="footer-brand">PETER ABOLUWODI</div>
+    <p>YouTube and Twitch growth, channel branding, management, editing, and monetization for creators who mean business.</p>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Explore</div>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Let's Connect</div>
+    <a href="mailto:Peteraboluwodi@gmail.com">Peteraboluwodi@gmail.com</a>
+    <div class="footer-text">Discord: georage100</div>
+    <a class="footer-social" href="https://www.fiverr.com/adesuloyepeter" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Fiverr</span>
+    </a>
+    <a class="footer-social" href="https://kwork.com/user/georage100" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Kwork</span>
+    </a>
+    <a class="footer-social" href="https://www.linkedin.com/in/peter-aboluwodi-520896387" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="7.2" cy="7.2" r="1.6" fill="currentColor"></circle><rect x="6.1" y="10.2" width="2.2" height="7.6" fill="currentColor"></rect><path d="M11.3 10.2h2.1v1.3c.5-.9 1.5-1.5 2.9-1.5 2.2 0 3.4 1.5 3.4 4.1v3.7h-2.2v-3.4c0-1.4-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.5-.1.8v3.7h-2.2z" fill="currentColor"></path></svg>
+      <span>LinkedIn</span>
+    </a>
+    <a class="footer-social" href="https://wa.me/2347088361880" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 8.3c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.4.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.8 1.6.2.1.4.1.5-.1.2-.1.6-.7.8-.9.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.9-.2 1.7-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.3-1.4-5.5-4.8-5.6-5-.2-.2-1.3-1.8-1.3-3.4 0-1.6.9-2.4 1.2-2.7Z" fill="currentColor"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var cards = document.querySelectorAll('.about-extras-card');
+    if (!cards.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    cards.forEach(function (card, i) {
+      card.style.transitionDelay = reduce ? '0s' : (i * 90) + 'ms';
+    });
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      cards.forEach(function (card) { card.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.3 });
+
+    cards.forEach(function (card) { observer.observe(card); });
+  })();
+</script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    if (!items.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    items.forEach(function (item, i) {
+      item.style.transitionDelay = reduce ? '0s' : (i * 60) + 'ms';
+
+      var question = item.querySelector('.faq-question');
+      question.addEventListener('click', function () {
+        var isOpen = item.classList.contains('is-open');
+        items.forEach(function (other) {
+          other.classList.remove('is-open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('is-open');
+          question.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (item) { item.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach(function (item) { observer.observe(item); });
+  })();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a80bb891d62051d4f67ff7a/1k03dp4vj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

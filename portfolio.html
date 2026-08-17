@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio - Peter Aboluwodi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  try {
+    var pref = localStorage.getItem('theme') || 'system';
+    var resolved = pref === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref;
+    document.documentElement.dataset.theme = resolved;
+  } catch (e) {}
+})();
+</script>
+<script src="nav.js" defer></script>
+<script src="theme.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-brand-name">PETER ABOLUWODI</span>
+    <span class="nav-brand-tagline">Creator Growth Specialist</span>
+  </a>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button type="button" class="theme-btn" data-theme-choice="light" aria-label="Light theme" title="Light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="dark" aria-label="Dark theme" title="Dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button type="button" class="theme-btn" data-theme-choice="system" aria-label="Match system theme" title="System">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+      </button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-item nav-item--dropdown">
+        <a href="services.html" class="nav-link">Services</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-dropdown-services" aria-label="Toggle services menu">
+          <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" id="nav-dropdown-services">
+          <div class="nav-dropdown-inner">
+            <a href="services.html#seo-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">01</span>YouTube SEO &amp; Promotion</a>
+            <a href="services.html#channel-management" class="nav-dropdown-item"><span class="nav-dropdown-num">02</span>Channel Management &amp; Audit</a>
+            <a href="services.html#video-editing" class="nav-dropdown-item"><span class="nav-dropdown-num">03</span>YouTube Video Editing</a>
+            <a href="services.html#twitch-promotion" class="nav-dropdown-item"><span class="nav-dropdown-num">04</span>Twitch Promotion &amp; Branding</a>
+            <a href="services.html#monetization" class="nav-dropdown-item"><span class="nav-dropdown-num">05</span>YouTube Monetization</a>
+          </div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link nav-link--active">Portfolio</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Book a Free Audit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-intro">
+    <h1>Work I've shipped.</h1>
+    <p>Case studies below use illustrative placeholder figures. Real client examples on request.</p>
+  </div>
+
+  <div class="case-grid">
+
+    <div class="case-card" id="case-channel-management">
+      <div class="case-thumb-pair">
+        <button type="button" class="case-thumb-trigger" data-lightbox-caption="28-day channel analytics dashboard">
+          <img src="images/case-studies/case-channelmgmt-dashboard.webp" alt="YouTube Studio channel analytics dashboard showing 389,022 views in the last 28 days" loading="lazy">
+        </button>
+        <button type="button" class="case-thumb-trigger" data-lightbox-caption="Subscriber and view growth, before vs. after management">
+          <img src="images/case-studies/case-channelmgmt-beforeafter.webp" alt="Before and after comparison showing subscriber growth from 10.4K to 743K and lifetime views from 2.1M to 88.1M" loading="lazy">
+        </button>
+      </div>
+      <div class="case-body">
+        <div class="case-thumb-caption">Real client dashboard, plus a before/after view of subscriber and lifetime view growth under ongoing management.</div>
+        <div class="case-tag">Channel Management &amp; Audit</div>
+        <h3 class="case-title"><a href="https://www.youtube.com/@realSMLgaming" class="case-title-link" target="_blank" rel="noopener">SML Gaming</a></h3>
+        <p class="case-desc">Full channel audit and management led to steadier uploads and a clearer content strategy.</p>
+        <div class="case-stats">
+          <div><div class="case-stat-num">+120%</div><div class="case-stat-label">Subscribers</div></div>
+          <div><div class="case-stat-num">+80%</div><div class="case-stat-label">Watch time</div></div>
+        </div>
+        <a href="https://www.youtube.com/@realSMLgaming" class="case-link" target="_blank" rel="noopener">Visit channel →</a>
+      </div>
+    </div>
+
+    <div class="case-card" id="case-seo-promotion">
+      <button type="button" class="case-thumb case-thumb-trigger" data-lightbox-caption="Video performance: CTR, ranking, and average view duration">
+        <img src="images/case-studies/case-seo-performance.webp" alt="YouTube Studio video performance panel showing a 4.9% click-through rate and a number 1 ranking by views" loading="lazy">
+      </button>
+      <div class="case-body">
+        <div class="case-thumb-caption">Real YouTube Studio data: this video ranked #1 by views with a 4.9% click-through rate.</div>
+        <div class="case-tag">YouTube SEO &amp; Promotion</div>
+        <h3 class="case-title"><a href="https://www.youtube.com/@shinchangaming9029" class="case-title-link" target="_blank" rel="noopener">ShinChan Gaming</a></h3>
+        <p class="case-desc">Metadata and thumbnail overhaul drove a sharp rise in click-through rate.</p>
+        <div class="case-stats">
+          <div><div class="case-stat-num">3.4x</div><div class="case-stat-label">CTR</div></div>
+          <div><div class="case-stat-num">+55%</div><div class="case-stat-label">Impressions</div></div>
+        </div>
+        <a href="https://www.youtube.com/@shinchangaming9029" class="case-link" target="_blank" rel="noopener">Visit channel →</a>
+      </div>
+    </div>
+
+    <div class="case-card" id="case-twitch-promotion">
+      <button type="button" class="case-thumb case-thumb-trigger" data-lightbox-caption="Follower growth: 2.5K to 74.2K">
+        <img src="images/case-studies/case-twitch-beforeafter.webp" alt="Chloe__IRL Twitch profile growth shown as before, after, and now: 2.5K, then 30K, then 74.2K followers" loading="lazy">
+      </button>
+      <div class="case-thumb-gallery">
+        <button type="button" class="case-thumb-gallery-item case-thumb-trigger" data-lightbox-caption="Custom stream overlay design">
+          <img src="images/case-studies/case-twitch-overlay-goosegamer.webp" alt="Custom neon arcade-themed stream overlay with live chat and webcam frames, designed for Goose Gamer" loading="lazy">
+        </button>
+        <button type="button" class="case-thumb-gallery-item case-thumb-trigger" data-lightbox-caption="Custom channel branding">
+          <img src="images/case-studies/case-twitch-banner-caliskatergirl.webp" alt="Custom Twitch channel banner designed for CaliSkaterGirl" loading="lazy">
+        </button>
+      </div>
+      <div class="case-body">
+        <div class="case-thumb-caption">Real before-and-after Twitch growth, plus examples of custom overlay and banner design work for other streamers.</div>
+        <div class="case-tag">Twitch Promotion &amp; Branding</div>
+        <h3 class="case-title"><a href="https://www.twitch.tv/chloe__irl" class="case-title-link" target="_blank" rel="noopener">Chloe__IRL</a></h3>
+        <p class="case-desc">New stream branding and a promotion push grew average concurrent viewers.</p>
+        <div class="case-stats">
+          <div><div class="case-stat-num">+90%</div><div class="case-stat-label">Avg viewers</div></div>
+          <div><div class="case-stat-num">+40%</div><div class="case-stat-label">Followers</div></div>
+        </div>
+        <a href="https://www.twitch.tv/chloe__irl" class="case-link" target="_blank" rel="noopener">Visit channel →</a>
+      </div>
+    </div>
+
+    <div class="case-card" id="case-monetization">
+      <div class="case-thumb-pair">
+        <button type="button" class="case-thumb-trigger" data-lightbox-caption="Monetization eligibility progress">
+          <img src="images/case-studies/case-monetization-eligibility.webp" alt="YouTube Studio monetization eligibility screen showing subscriber and watch hour progress toward Partner Program requirements" loading="lazy">
+        </button>
+        <button type="button" class="case-thumb-trigger" data-lightbox-caption="Accepted into the YouTube Partner Program">
+          <img src="images/case-studies/case-monetization-accepted.webp" alt="YouTube notification confirming acceptance into the YouTube Partner Program" loading="lazy">
+        </button>
+      </div>
+      <div class="case-body">
+        <div class="case-thumb-caption">The eligibility tracker, followed by the official YouTube Partner Program acceptance.</div>
+        <div class="case-tag">YouTube Monetization</div>
+        <h3 class="case-title"><a href="https://www.youtube.com/@lfamilygamingdad" class="case-title-link" target="_blank" rel="noopener">L Family Gaming Dad</a></h3>
+        <p class="case-desc">Guided through Partner Program requirements to first monetized month.</p>
+        <div class="case-stats">
+          <div><div class="case-stat-num">45 days</div><div class="case-stat-label">To eligibility</div></div>
+          <div><div class="case-stat-num">+3</div><div class="case-stat-label">Revenue streams</div></div>
+        </div>
+        <a href="https://www.youtube.com/@lfamilygamingdad" class="case-link" target="_blank" rel="noopener">Visit channel →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="section section--bordered">
+    <div class="section-head">
+      <h2 class="section-title">Real Conversations, Real Results</h2>
+      <span class="section-note">Unedited Discord messages from clients I've worked with</span>
+    </div>
+    <div class="chat-proof-grid">
+      <div class="chat-proof-card">
+        <div class="chat-proof-bar" aria-hidden="true">
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-label">Discord DM</span>
+        </div>
+        <button type="button" class="chat-proof-img-wrap" data-lightbox-caption="YouTube promotion client">
+          <img class="chat-proof-img" src="images/discord/discord-forzahorizon.webp" alt="Discord conversation with a YouTube client saying he might make me his full-time promoter" loading="lazy">
+          <span class="chat-proof-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span>
+        </button>
+        <div class="chat-proof-caption">YouTube promotion client</div>
+      </div>
+      <div class="chat-proof-card">
+        <div class="chat-proof-bar" aria-hidden="true">
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-label">Discord DM</span>
+        </div>
+        <button type="button" class="chat-proof-img-wrap" data-lightbox-caption="Twitch growth client">
+          <img class="chat-proof-img" src="images/discord/discord-wizardofwonders.webp" alt="Discord conversation congratulating a client on becoming a Twitch Affiliate after consistent marketing help" loading="lazy">
+          <span class="chat-proof-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span>
+        </button>
+        <div class="chat-proof-caption">Twitch growth client</div>
+      </div>
+      <div class="chat-proof-card">
+        <div class="chat-proof-bar" aria-hidden="true">
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-label">Discord DM</span>
+        </div>
+        <button type="button" class="chat-proof-img-wrap" data-lightbox-caption="Twitch growth client">
+          <img class="chat-proof-img" src="images/discord/discord-kittykajira.webp" alt="Discord conversation with a client sharing their best-ever Twitch stream analytics" loading="lazy">
+          <span class="chat-proof-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span>
+        </button>
+        <div class="chat-proof-caption">Twitch growth client</div>
+      </div>
+      <div class="chat-proof-card">
+        <div class="chat-proof-bar" aria-hidden="true">
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-dot"></span>
+          <span class="chat-proof-label">Discord DM</span>
+        </div>
+        <button type="button" class="chat-proof-img-wrap" data-lightbox-caption="Fiverr client">
+          <img class="chat-proof-img" src="images/discord/discord-wickedgoth.webp" alt="Discord conversation confirming a paid project on Fiverr and getting started" loading="lazy">
+          <span class="chat-proof-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span>
+        </button>
+        <div class="chat-proof-caption">Fiverr client</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bordered">
+    <div class="logos-label">Channels I've worked with</div>
+    <div class="logo-marquee">
+      <div class="logo-marquee-row">
+        <div class="logo-marquee-track logo-marquee-track--left">
+          <div class="logo-marquee-half">
+            <img class="logo-marquee-item" src="images/logos/logo-01.webp" alt="Meatrius" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-02.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-03.webp" alt="ruhxflashttv" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-04.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-05.webp" alt="WWE" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-06.webp" alt="TTV Lucid Dreams" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-07.webp" alt="RAZOR317" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-08.webp" alt="SassyGirl1715" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-09.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-10.webp" alt="MoonWalkerJ5" loading="lazy">
+          </div>
+          <div class="logo-marquee-half" aria-hidden="true">
+            <img class="logo-marquee-item" src="images/logos/logo-01.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-02.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-03.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-04.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-05.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-06.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-07.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-08.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-09.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-10.webp" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="logo-marquee-row">
+        <div class="logo-marquee-track logo-marquee-track--right">
+          <div class="logo-marquee-half">
+            <img class="logo-marquee-item" src="images/logos/logo-11.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-12.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-13.webp" alt="Horror with Claws" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-14.webp" alt="Beats &amp; Beyond" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-15.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-16.webp" alt="Smokea7Leaf" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-17.webp" alt="Evelyn Esmeray" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-18.webp" alt="L Family Gaming Dad" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-19.webp" alt="Client channel" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-20.webp" alt="Client channel" loading="lazy">
+          </div>
+          <div class="logo-marquee-half" aria-hidden="true">
+            <img class="logo-marquee-item" src="images/logos/logo-11.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-12.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-13.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-14.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-15.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-16.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-17.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-18.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-19.webp" alt="" loading="lazy">
+            <img class="logo-marquee-item" src="images/logos/logo-20.webp" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Want results like these?</h2>
+    <a href="contact.html" class="btn btn--primary">Book a Free Audit</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-about">
+    <div class="footer-brand">PETER ABOLUWODI</div>
+    <p>YouTube and Twitch growth, channel branding, management, editing, and monetization for creators who mean business.</p>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Explore</div>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <div class="footer-heading">Let's Connect</div>
+    <a href="mailto:Peteraboluwodi@gmail.com">Peteraboluwodi@gmail.com</a>
+    <div class="footer-text">Discord: georage100</div>
+    <a class="footer-social" href="https://www.fiverr.com/adesuloyepeter" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Fiverr</span>
+    </a>
+    <a class="footer-social" href="https://kwork.com/user/georage100" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      <span>Kwork</span>
+    </a>
+    <a class="footer-social" href="https://www.linkedin.com/in/peter-aboluwodi-520896387" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="7.2" cy="7.2" r="1.6" fill="currentColor"></circle><rect x="6.1" y="10.2" width="2.2" height="7.6" fill="currentColor"></rect><path d="M11.3 10.2h2.1v1.3c.5-.9 1.5-1.5 2.9-1.5 2.2 0 3.4 1.5 3.4 4.1v3.7h-2.2v-3.4c0-1.4-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.5-.1.8v3.7h-2.2z" fill="currentColor"></path></svg>
+      <span>LinkedIn</span>
+    </a>
+    <a class="footer-social" href="https://wa.me/2347088361880" target="_blank" rel="noopener">
+      <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 8.3c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.4.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.8 1.6.2.1.4.1.5-.1.2-.1.6-.7.8-.9.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.9-.2 1.7-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.3-1.4-5.5-4.8-5.6-5-.2-.2-1.3-1.8-1.3-3.4 0-1.6.9-2.4 1.2-2.7Z" fill="currentColor"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var cards = document.querySelectorAll('.chat-proof-card');
+    if (!cards.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    cards.forEach(function (card, i) {
+      card.style.transitionDelay = reduce ? '0s' : (i * 120) + 'ms';
+    });
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      cards.forEach(function (card) { card.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(function (card) { observer.observe(card); });
+  })();
+</script>
+
+<script>
+  (function () {
+    var triggers = document.querySelectorAll('.chat-proof-img-wrap, .case-thumb-trigger');
+    if (!triggers.length) return;
+
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.innerHTML =
+      '<button type="button" class="lightbox-close" aria-label="Close">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>' +
+      '</button>' +
+      '<img class="lightbox-img" src="" alt="">' +
+      '<div class="lightbox-caption"></div>';
+    document.body.appendChild(overlay);
+
+    var lightboxImg = overlay.querySelector('.lightbox-img');
+    var caption = overlay.querySelector('.lightbox-caption');
+    var closeBtn = overlay.querySelector('.lightbox-close');
+    var lastFocused = null;
+
+    function open(trigger) {
+      var srcImg = trigger.querySelector('img');
+      lightboxImg.src = srcImg.src;
+      lightboxImg.alt = srcImg.alt;
+      caption.textContent = trigger.dataset.lightboxCaption || '';
+      lastFocused = document.activeElement;
+      overlay.classList.add('is-open');
+      closeBtn.focus();
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      overlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    }
+
+    triggers.forEach(function (trigger) {
+      trigger.addEventListener('click', function () { open(trigger); });
+    });
+    closeBtn.addEventListener('click', close);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var titles = document.querySelectorAll('.case-title-link');
+    if (!titles.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      titles.forEach(function (title) { title.classList.add('is-visible'); });
+      return;
+    }
+
+    // Observe the unclipped .case-title wrapper rather than the link itself:
+    // the link's own clip-path (used for the reveal animation) makes Chromium
+    // report zero intersection for it regardless of scroll position.
+    var wraps = document.querySelectorAll('.case-title');
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var link = entry.target.querySelector('.case-title-link');
+        if (link) link.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.6 });
+
+    wraps.forEach(function (wrap) { observer.observe(wrap); });
+  })();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a80bb891d62051d4f67ff7a/1k03dp4vj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
